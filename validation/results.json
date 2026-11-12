@@ -1,0 +1,116 @@
+{
+  "source": "bartoszmajsak/maas-billing",
+  "revision": "cd072a9a3533809fab69429ace384823c521eb55",
+  "identities": {
+    "bartoszmajsak": 719616,
+    "bartoszmajsak-test": 34574692
+  },
+  "checks": [
+    {
+      "name": "real contributor identity without write access",
+      "result": "pass",
+      "comment": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/pull/1#issuecomment-6825367558"
+    },
+    {
+      "name": "fork notification resolves correct PR",
+      "result": "pass",
+      "comment": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/pull/2#issuecomment-6825381435"
+    },
+    {
+      "name": "bartoszmajsak-test allowed on PR 2",
+      "result": "pass",
+      "comment": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/pull/2#issuecomment-6825382469",
+      "association": "CONTRIBUTOR",
+      "controller": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43230820493",
+      "target": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43230759385",
+      "before_attempt": 1,
+      "after_attempt": 2
+    },
+    {
+      "name": "fork rerun retains read-only token",
+      "result": "pass",
+      "run": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43230759385"
+    },
+    {
+      "name": "bartoszmajsak-test denied on PR 3",
+      "result": "pass",
+      "comment": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/pull/3#issuecomment-6825397409",
+      "association": "CONTRIBUTOR",
+      "controller": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43230928858",
+      "target": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43230896345",
+      "before_attempt": 1,
+      "after_attempt": 1
+    },
+    {
+      "name": "bartoszmajsak allowed on PR 3",
+      "result": "pass",
+      "comment": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/pull/3#issuecomment-6825403609",
+      "association": "OWNER",
+      "controller": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43230971742",
+      "target": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43230896345",
+      "before_attempt": 1,
+      "after_attempt": 2
+    },
+    {
+      "name": "bartoszmajsak-test denied on PR 4",
+      "result": "pass",
+      "comment": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/pull/4#issuecomment-6825425438",
+      "association": "CONTRIBUTOR",
+      "controller": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43231123771",
+      "target": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43231035203",
+      "before_attempt": 1,
+      "after_attempt": 1
+    },
+    {
+      "name": "bartoszmajsak allowed on PR 4",
+      "result": "pass",
+      "comment": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/pull/4#issuecomment-6825431872",
+      "association": "OWNER",
+      "controller": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43231168296",
+      "target": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43231035203",
+      "before_attempt": 1,
+      "after_attempt": 2
+    },
+    {
+      "name": "bartoszmajsak-test allowed on PR 5",
+      "result": "pass",
+      "comment": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/pull/5#issuecomment-6825446959",
+      "association": "COLLABORATOR",
+      "controller": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43231274602",
+      "target": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43231238900",
+      "before_attempt": 1,
+      "after_attempt": 2
+    },
+    {
+      "name": "bartoszmajsak-test denied on PR 6",
+      "result": "pass",
+      "comment": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/pull/6#issuecomment-6825461753",
+      "association": "CONTRIBUTOR",
+      "controller": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43231376874",
+      "target": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43231340646",
+      "before_attempt": 1,
+      "after_attempt": 1
+    },
+    {
+      "name": "old authorized comment rechecked after revocation",
+      "result": "pass",
+      "controller": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f/actions/runs/43231274602"
+    }
+  ],
+  "status": "pass",
+  "repository": "https://github.com/bartoszmajsak/maas-rerun-auth-20261112-e9256e1f",
+  "workflow_sha256": {
+    ".github/workflows/rerun.yml": "855cdaee6bfa064a402949860a5021d447f4e4fabec0dadd521f5db1ca27ae4f",
+    ".github/workflows/rerun-help.yml": "2435df83ef91625ed70f0f3bfea36a3235660ca710647b733d9eb34e494dc667"
+  },
+  "fixture_default_commit": "e233feb480ce290863e8d0facf128464942e6d97",
+  "cleanup_errors": [],
+  "independent_verification": {
+    "test_account_permission": "read",
+    "pending_test_account_invitations": 0,
+    "open_fixture_prs": 0,
+    "workflow_hashes_match": true,
+    "target_run_attempts_match": true,
+    "revoked_comment_replay_rejected": true
+  }
+}
